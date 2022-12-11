@@ -3,12 +3,17 @@ all my Repos per SSH
 
 # creating initial Repo:
 ```
-$ repo init -u git@github.com:seapath/repo-manifest.git
+$ git clone git@github.com:seapath/repo-manifest.git
+$ cd repo-manifest
+remove unused files and folders: .github , .git , .gitreview, LICENSE, README.adoc
 replace tools.xml with own version of it!
 $ git init
 $ git add .
 $ git commit -m "msg"
+$ git remote add origin https://github.com/USER/REPO.git
+or
 $ git remote set-url origin git@github.com/USERNAME/REPOSITORY.git
+$ git remote -v
 $ git fetch
 $ git rebase
 $ git push
@@ -20,6 +25,7 @@ $ ssh-add ~/.ssh/github
 $ repo init -u git@github.com:Wlad79/Repos.git
 $ repo init -m yocto_raspberrypi.xml # this is example only
 $ repo sync
+$ repo forall -c git status
 ```
 
 # Pushing of Changes
@@ -29,4 +35,14 @@ $ git checkout -b "featureXY"
 $ git log && repo status
 $ git push -u github_wlad79_YoctoConfRaspberryPi featureXY
 merge on remote GitHub the branch featureXY into main with pull-request!
+```
+
+## create manifest automatically for errors findings
+```
+$ repo init -u git@github.com:Wlad79/Repos.git
+$ repo sync
+$ repo manifest -o .xml -r
+make changes in .xml
+$ cp .xml .../.repo/manifests/default.xml
+$ repo sync
 ```
