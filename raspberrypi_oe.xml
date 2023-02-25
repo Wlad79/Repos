@@ -3,9 +3,9 @@
 <!-- SPDX-License-Identifier: MIT -->
 <manifest>
   <!-- Remote repositories definition -->
-  <remote name="oe_layer_remote" fetch="git://git.openembedded.org/meta-openembedded"/>
-  <remote name="oe_core_remote" fetch="git://git.openembedded.org/openembedded-core"/>
-  <remote name="meta_raspberrypi_remote" fetch="git://git.yoctoproject.org/meta-raspberrypi/"/>
+  <remote name="oe_layer_remote" fetch="git://git.openembedded.org"/>
+  <remote name="oe_core_remote" fetch="git://git.openembedded.org"/>
+  <remote name="meta_raspberrypi_remote" fetch="git://git.yoctoproject.org"/>
   <!--remote name="github_wlad79_OeConfRaspberryPi" fetch="."/-->
 
   <!-- Upstream Yocto & OpenEmbedded Projects -->
