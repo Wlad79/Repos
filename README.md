@@ -24,12 +24,12 @@ $ git push
 $ eval "$(ssh-agent -s)"
 $ ssh-add ~/.ssh/github
 $ repo init -u git@github.com:Wlad79/Repos.git
-$ repo init -m yocto_raspberrypi.xml # this is example only
+$ repo init -m raspberrypi_oe.xml # this is example only
 $ repo sync
 $ repo forall -c git status
 ```
 
-# Pushing of Changes
+# Pushing of Changes with review
 ```
 $ eval "$(ssh-agent -s)"
 $ ssh-add ~/.ssh/github
@@ -37,6 +37,17 @@ $ git checkout -b "featureXY"
 $ git log && repo status
 $ git push -u github_wlad79_YoctoConfRaspberryPi featureXY
 merge on remote GitHub the branch featureXY into main with pull-request!
+```
+
+# Pushing of Changes without review
+```
+$ git branch -a
+$ git checkout main
+$ git add .
+$ git status
+$ git commit -m "commit message"
+$ git push
+$ git status
 ```
 
 ## create manifest automatically for errors findings
