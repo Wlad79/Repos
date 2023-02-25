@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Copyright (C) 2022, Waldemar Friesen (https://www.wlad79.de) -->
+<!-- SPDX-License-Identifier: MIT -->
+<manifest>
+  <!-- Remote repositories definition -->
+  <remote name="oe_layer_remote" fetch="git://git.openembedded.org/meta-openembedded"/>
+  <remote name="oe_core_remote" fetch="git://git.openembedded.org/openembedded-core"/>
+  <remote name="meta_raspberrypi_remote" fetch="git://git.yoctoproject.org/meta-raspberrypi/"/>
+  <!--remote name="github_wlad79_OeConfRaspberryPi" fetch="."/-->
+
+  <!-- Upstream Yocto & OpenEmbedded Projects -->
+  <project revision="kirkstone" remote="oe_layer_remote"                 name="meta-openembedded" path="OE/sources/meta-openembedded"/>
+  <project revision="kirkstone" remote="oe_core_remote"                  name="openembedded-core" path="OE/sources/openembedded-core"/>
+  <project revision="kirkstone" remote="meta_raspberrypi_remote"         name="meta-raspberrypi"  path="OE/sources/meta-raspberrypi"/>
+  <!--project revision="main"      remote="github_wlad79_OeConfRaspberryPi" name="OeConfRaspberryPi" path="OE/rpi-build/conf/"/-->
+</manifest>
