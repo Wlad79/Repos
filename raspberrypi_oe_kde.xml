@@ -5,7 +5,7 @@
   <!-- Remote repositories definition -->
   <remote name="poky_remote" fetch="git://git.yoctoproject.org/"/>
   <remote name="oe_layer_remote" fetch="git://git.openembedded.org"/>
-  <remote name="oe_core_remote" fetch="git://git.openembedded.org"/>
+  <!--remote name="oe_core_remote" fetch="git://git.openembedded.org"/-->
   <remote name="meta_raspberrypi_remote" fetch="git://git.yoctoproject.org"/>
   <remote name="yocto_kde_remote" fetch="https://invent.kde.org/packaging/"/>
   <remote name="yocto_kde4_remote" fetch="https://bitbucket.org/gen_dev_sst/"/>
@@ -17,7 +17,7 @@
   <!-- Upstream Yocto & OpenEmbedded Projects -->
   <project revision="kirkstone" remote="poky_remote"             name="poky" path="OE/sources/poky"/>
   <project revision="kirkstone" remote="oe_layer_remote"         name="meta-openembedded" path="OE/sources/meta-openembedded"/>
-  <project revision="kirkstone" remote="oe_core_remote"          name="openembedded-core" path="OE/sources/openembedded-core"/>
+  <!--project revision="kirkstone" remote="oe_core_remote"          name="openembedded-core" path="OE/sources/openembedded-core"/-->
   <project revision="kirkstone" remote="meta_raspberrypi_remote" name="meta-raspberrypi"  path="OE/sources/meta-raspberrypi"/>
   <project revision="master"    remote="yocto_kde_remote"        name="yocto-meta-kde"    path="OE/sources/meta-kde"/>
   <project revision="master"    remote="yocto_kde4_remote"       name="meta-kde4"         path="OE/sources/meta-kde4"/>
