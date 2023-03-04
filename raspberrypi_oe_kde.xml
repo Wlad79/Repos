@@ -7,18 +7,20 @@
   <remote name="oe_layer_remote" fetch="git://git.openembedded.org"/>
   <remote name="oe_core_remote" fetch="git://git.openembedded.org"/>
   <remote name="meta_raspberrypi_remote" fetch="git://git.yoctoproject.org"/>
+  <remote name="yocto_kde_remote" fetch="https://invent.kde.org/packaging/"/>
   <remote name="yocto_kde5_remote" fetch="https://invent.kde.org/packaging"/>
   <remote name="meta_qt5_remote" fetch="https://github.com/meta-qt5"/>
   <remote name="bitbake_remote" fetch="https://git.openembedded.org"/>
-  <!--remote name="github_wlad79_OeConfRaspberryPi" fetch="."/-->
+  <remote name="github_wlad79_OeConfRaspberryPi" fetch="."/>
 
   <!-- Upstream Yocto & OpenEmbedded Projects -->
   <project revision="kirkstone" remote="poky_remote"             name="poky" path="OE/sources/poky"/>
   <project revision="kirkstone" remote="oe_layer_remote"         name="meta-openembedded" path="OE/sources/meta-openembedded"/>
   <project revision="kirkstone" remote="oe_core_remote"          name="openembedded-core" path="OE/sources/openembedded-core"/>
   <project revision="kirkstone" remote="meta_raspberrypi_remote" name="meta-raspberrypi"  path="OE/sources/meta-raspberrypi"/>
+  <project revision="kirkstone" remote="yocto_kde_remote"        name="yocto-meta-kde" path="OE/sources/yocto-meta-kde"/>
   <project revision="master"    remote="yocto_kde5_remote"       name="yocto-meta-kf5" path="OE/sources/yocto-meta-kf5"/>
   <project revision="kirkstone" remote="meta_qt5_remote"         name="meta-qt5"  path="OE/sources/meta-qt5"/>
   <project revision="master"    remote="bitbake_remote"          name="bitbake"  path="OE/sources/bitbake"/>
-  <!--project revision="main"      remote="github_wlad79_OeConfRaspberryPi" name="Build-OE-RPi" path="OE/Build-OE-RPi/"/-->
+  <project revision="main"      remote="github_wlad79_OeConfRaspberryPi" name="Build-OE-RPi" path="OE/Build-OE-RPi/"/>
 </manifest>
