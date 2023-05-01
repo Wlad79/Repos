@@ -4,19 +4,19 @@ start()
 {
 #usage: copy into conf folder and from there:
 # $ source openEmbedded && start
-	export PATH=$(pwd)/../../sources/bitbake/bin:$PATH
+	export PATH=$(pwd)/../../sources/poky/bitbake/bin:$PATH
 	bitbake jetson-nano-devkit-emmc
 }
 
 populate_sdk()
 {
-	export PATH=$(pwd)/../../sources/bitbake/bin:$PATH
+	export PATH=$(pwd)/../../sources/poky/bitbake/bin:$PATH
 	bitbake jetson-nano-devkit-emmc -c populate_sdk
 }
 
 u-boot()
 {
-	export PATH=$(pwd)/../../sources/bitbake/bin:$PATH
+	export PATH=$(pwd)/../../sources/poky/bitbake/bin:$PATH
 	bitbake u-boot -c menuconfig
 }
 
