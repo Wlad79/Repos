@@ -9,8 +9,8 @@
   <!--remote name="github_wlad79_OEJNB01" fetch="."/-->
 
   <!-- Upstream Yocto & OpenEmbedded Projects -->
-  <project revision="dunfell" remote="tegra_remote"             name="meta-tegra"        path="OE/sources/meta-tegra"/>
-  <project revision="dunfell" remote="poky_remote"              name="poky"              path="OE/sources/poky"/>
-  <project revision="dunfell" remote="meta_openembedded_remote" name="meta-openembedded" path="OE/sources/meta-openembedded"/>
-  <!--project revision="main"    remote="github_wlad79_OEJNB01"    name="OeConfJNB01"       path="OE/build-jnB01/conf/"/-->
+  <project remote="tegra_remote"             revision="dunfell" name="meta-tegra"        path="OE/sources/meta-tegra"/>
+  <project remote="poky_remote"              revision="dunfell" name="poky"              path="OE/sources/poky"/>
+  <project remote="meta_openembedded_remote" revision="dunfell" name="meta-openembedded" path="OE/sources/meta-openembedded"/>
+  <!--project remote="github_wlad79_OEJNB01" revision="main"        name="OeConfJNB01"       path="OE/build-jnB01/conf/"/-->
 </manifest>
