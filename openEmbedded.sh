@@ -3,15 +3,24 @@
 start()
 {
 #usage: copy into conf folder and from there:
-# $ source openEmbedded && start
+# $ source openEmbedded.sh && start
 	export PATH=$(pwd)/../../sources/poky/bitbake/bin:$PATH
-	bitbake jetson-nano-devkit-emmc
+	bitbake core-image-minimal
+	#bitbake core-image-sato
 }
 
 populate_sdk()
 {
 	export PATH=$(pwd)/../../sources/poky/bitbake/bin:$PATH
-	bitbake jetson-nano-devkit-emmc -c populate_sdk
+	bitbake core-image-minimal -c populate_sdk
+}
+
+reset()
+{
+	rm -drf ../tmp-glibc
+	rm -drf ../sstate-cache
+	rm -drf ../downloads
+	rm -drf ../cache
 }
 
 u-boot()
