@@ -9,8 +9,8 @@
   <remote name="github_wlad79_YoctoConfRaspberryPi" fetch="."/>
 
   <!-- Upstream Yocto & OpenEmbedded Projects -->
-  <project remote="poky_remote" revision="kirkstone" name="poky" path="Yocto/sources/poky"/>
-  <project remote="meta_openembedded_remote" revision="kirkstone" name="meta-openembedded" path="Yocto/sources/meta-openembedded"/>
-  <project remote="meta_raspberrypi_remote" revision="kirkstone" name="meta-raspberrypi" path="Yocto/sources/meta-raspberrypi"/>
-  <project remote="github_wlad79_YoctoConfRaspberryPi" revision="main" name="YoctoConfRaspberryPi" path="Yocto/rpi-build/conf/"/>
+  <project revision="kirkstone" remote="poky_remote"                        name="poky"              path="Yocto/sources/poky"/>
+  <project revision="kirkstone" remote="meta_openembedded_remote"           name="meta-openembedded" path="Yocto/sources/meta-openembedded"/>
+  <project revision="kirkstone" remote="meta_raspberrypi_remote"            name="meta-raspberrypi"  path="Yocto/sources/meta-raspberrypi"/>
+  <project revision="main"      remote="github_wlad79_YoctoConfRaspberryPi" name="YoctoConfRPi"      path="Yocto/rpi-build/conf/"/>
 </manifest>
