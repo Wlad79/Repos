@@ -24,5 +24,5 @@
   <project revision="master"    remote="yocto_kf5_remote"        name="yocto-meta-kf5"    path="OE/sources/yocto-meta-kf5"/>
   <project revision="kirkstone" remote="meta_qt5_remote"         name="meta-qt5"          path="OE/sources/meta-qt5"/>
   <project revision="master"    remote="bitbake_remote"          name="bitbake"           path="OE/sources/bitbake"/>
-  <project revision="main"      remote="github_wlad79_OeConfRaspberryPi" name="Build-OE-RPi" path="OE/Build-OE-RPi/"/>
+  <project revision="main"      remote="github_wlad79_OeConfRaspberryPi" name="OeConfRPiKDE" path="OE/build-RPi3-64/"/>
 </manifest>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Copyright (C) 2022, Waldemar Friesen (https://www.wlad79.de) -->
+<!-- SPDX-License-Identifier: MIT -->
+<manifest>
+  <!-- Remote repositories definition -->
+  <remote name="poky_remote"  fetch="git://git.yoctoproject.org/"/>
+  <remote name="tegra_remote" fetch="https://github.com/OE4T/"/>
+  <remote name="meta_openembedded_remote" fetch="git://git.openembedded.org/"/>
+  <remote name="github_wlad79_OEJNB01" fetch="."/>
+
+  <!-- Upstream Yocto & OpenEmbedded Projects -->
+  <project revision="dunfell" remote="tegra_remote"             name="meta-tegra"        path="OE/sources/meta-tegra"/>
+  <project revision="dunfell" remote="poky_remote"              name="poky"              path="OE/sources/poky"/>
+  <project revision="dunfell" remote="meta_openembedded_remote" name="meta-openembedded" path="OE/sources/meta-openembedded"/>
+  <project revision="main"    remote="github_wlad79_OEJNB01"    name="OeConfJNB01"       path="OE/build-jnB01/conf/"/>
+</manifest>
