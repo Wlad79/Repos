@@ -24,7 +24,7 @@ $ git push
 $ eval "$(ssh-agent -s)"
 $ ssh-add ~/.ssh/github
 $ repo init -u git@github.com:Wlad79/Repos.git
-$ repo init -m oe_jetson_nano.xml # this is example only
+$ repo init -m oe_tegra.xml # this is example only
 $ repo sync
 $ repo forall -c git status
 ```
