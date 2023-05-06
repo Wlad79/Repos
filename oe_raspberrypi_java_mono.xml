@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Copyright (C) 2022, Waldemar Friesen (https://www.wlad79.de) -->
+<!-- SPDX-License-Identifier: MIT -->
+<manifest>
+  <!-- Remote repositories definition -->
+  <remote name="poky_remote"         fetch="git://git.yoctoproject.org/"/>
+  <remote name="meta_rpi_remote"     fetch="git://git.yoctoproject.org"/>
+  <remote name="oe_layer_remote"     fetch="git://git.openembedded.org"/>
+  <!--remote name="oe_core_remote" fetch="git://git.openembedded.org"/-->
+  <remote name="java_oracle_remote"  fetch="git://git.yoctoproject.org"/>
+  <remote name="mono_dot_NET_remote" fetch="https://github.com/DynamicDevices"/>
+  <remote name="github_wlad79_OeConfRaspberryPi" fetch="."/>
+
+  <!-- Upstream Yocto & OpenEmbedded Projects -->
+  <project revision="kirkstone" remote="poky_remote"         name="poky"              path="MonoJava/sources/poky"/>
+  <project revision="kirkstone" remote="meta_rpi_remote"     name="meta-raspberrypi"  path="MonoJava/sources/meta-raspberrypi"/>
+  <project revision="kirkstone" remote="oe_layer_remote"     name="meta-openembedded" path="MonoJava/sources/meta-openembedded"/>
+  <!--project revision="kirkstone" remote="oe_core_remote"   name="openembedded-core" path="MonoJava/sources/openembedded-core"/-->
+  <project revision="master"    remote="java_oracle_remote"  name="meta-oracle-java"  path="MonoJava/sources/meta-oracle-java"/>
+  <project revision="master"    remote="mono_dot_NET_remote" name="meta-mono"         path="MonoJava/sources/meta-mono"/>
+  <project revision="main"      remote="github_wlad79_OeConfRPi" name="OeConfRPiMonoJava" path="MonoJava/build-oe-RPi3-64/conf"/>
+</manifest>
