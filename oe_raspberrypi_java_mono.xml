@@ -9,7 +9,7 @@
   <!--remote name="oe_core_remote" fetch="git://git.openembedded.org"/-->
   <remote name="java_oracle_remote"  fetch="git://git.yoctoproject.org"/>
   <remote name="mono_dot_NET_remote" fetch="https://github.com/DynamicDevices"/>
-  <remote name="github_wlad79_OeConfRaspberryPi" fetch="."/>
+  <remote name="github_wlad79_OeConfRPi" fetch="."/>
 
   <!-- Upstream Yocto & OpenEmbedded Projects -->
   <project revision="kirkstone" remote="poky_remote"         name="poky"              path="MonoJava/sources/poky"/>
