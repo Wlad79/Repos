@@ -17,6 +17,6 @@
   <project revision="kirkstone" remote="oe_layer_remote"     name="meta-openembedded" path="MonoJava/sources/meta-openembedded"/>
   <!--project revision="kirkstone" remote="oe_core_remote"   name="openembedded-core" path="MonoJava/sources/openembedded-core"/-->
   <project revision="master"    remote="java_oracle_remote"  name="meta-oracle-java"  path="MonoJava/sources/meta-oracle-java"/>
-  <project revision="master"    remote="mono_dot_NET_remote" name="meta-mono"         path="MonoJava/sources/meta-mono"/>
+  <project revision="kirkstone" remote="mono_dot_NET_remote" name="meta-mono"         path="MonoJava/sources/meta-mono"/>
   <project revision="main"      remote="github_wlad79_OeConfRPi" name="OeConfRPiMonoJava" path="MonoJava/build-oe-RPi3-64/conf"/>
 </manifest>
