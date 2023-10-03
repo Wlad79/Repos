@@ -12,5 +12,5 @@
   <project revision="kirkstone" remote="poky_remote"                        name="poky"              path="Yocto/sources/poky"/>
   <project revision="kirkstone" remote="meta_openembedded_remote"           name="meta-openembedded" path="Yocto/sources/meta-openembedded"/>
   <project revision="kirkstone" remote="meta_raspberrypi_remote"            name="meta-raspberrypi"  path="Yocto/sources/meta-raspberrypi"/>
-  <project revision="main"      remote="github_wlad79_YoctoConfRaspberryPi" name="YoctoConfRPi"      path="Yocto/build-rpi/conf/"/>
+  <project revision="main"      remote="github_wlad79_YoctoConfRaspberryPi" name="YoctoConfRPi"      path="Yocto/build-raspi/conf/"/>
 </manifest>
